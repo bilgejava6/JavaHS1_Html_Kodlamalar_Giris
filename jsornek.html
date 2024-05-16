@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Örnek</title>
+</head>
+<body>
+    <div>
+        <button onclick="add()" type="submit">Bileşen Ekle</button>
+    </div>
+    <div id="root">
+
+    </div>
+    <script>
+        function add(){
+            /**
+             * document -> body iççerisindeki html taglerini 
+             * barındıran ilgili dökümanın kendisini ifade 
+             * eder.
+             * getElementById -> document içindeki her hangi 
+             * bir bileşeni seçmek için id sini kullanacağımızı
+             * ifade eder.
+             *
+             */  
+            const divRoot = document.getElementById('root');
+            divRoot.setAttribute('style','border: 1px solid red');
+            const image = document.createElement('img');
+            image.setAttribute('src','https://picsum.photos/100/100');
+            image.setAttribute('style','border-radius: 50%');
+            divRoot.appendChild(image);
+        }
+    </script>
+</body>
+</html>

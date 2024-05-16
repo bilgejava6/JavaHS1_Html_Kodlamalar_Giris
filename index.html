@@ -1,0 +1,109 @@
+<!-- HTML TAG -->
+<html>
+<!-- Temel bir HTML sayfası iki kısımdan oluşur
+    HEAD
+    BODY
+-->
+<head>
+<!-- Header  browser penceresinde görünmez, ancak web sitesi ile ilgili gerekli 
+konfigürasyonları, ihtiyaç duyusal medya, css, js gibi dosyaları barındırır 
+ve header yüklenmeden BODY yüklenmez, yani header yüklene kadar web sitesi 
+beyaz ekranda kalır header yüklendinten sonra yukarıdan aşağıya doğru web sitesi yüklenir.-->
+    <title>İlk Web Sitem</title>
+</head>
+    <!-- SEO, arama motorları için optimizasyon -->
+    <h1>Manşet TAG i dir bir sayfada 1 adet bulunmalıdır.</h1>
+    <h2>alt başlık - H2</h2>
+    <!-- Inline Block, sadece hacmi kadar yer kaplar -->
+    Muhammet Hoca
+    Java Eğitmeni
+    Ankara Bilge Adam
+    <!-- block Element, bulunduğu yatay hacmi doldurur.-->
+    <p>Muhammet HOCA</p>
+    <p>Java Yazılım Eğitmeni</p>
+    <p>Ankara</p>
+    <!-- EMMET -->
+    <!-- İnternet sitesinin Görselleştirilmesi CSS
+    yani Style ile mümkündür.-->
+    <p style="color: brown; background-color: aqua;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure incidunt, neque quaerat, fuga est perferendis id veritatis architecto repellendus alias itaque! Rerum maiores illum, fugit quisquam quis beatae consectetur incidunt.
+    </p>
+    <label style="font-family: monospace; font-weight: bolder; font-size: xx-large;">Adınız Soyadınız</label> <br>
+    <input type="text">
+    <br><br>
+    <label style="display: block; margin: 20px;">e-mail adresiniz</label>
+    <input style="display: block; width: 90%;padding: 10px; border: 1px solid black; border-radius: 5px;" type="email">
+    <br><br>
+    <label>Şifreniz</label> <br>
+    <input type="password" />
+    <br><br>
+
+    <div style="border: 1px solid gray; min-height: 150px; border-radius: 20px;">
+
+    </div>
+
+    <div style="text-align: center; margin: 10px; background-color: cadetblue; padding: 5px;">
+
+        <img style="border-radius: 50%;" src="https://picsum.photos/100/100">
+
+    </div>
+
+    <input type="checkbox" /> <label>Java</label><br>
+    <input type="checkbox" /> <label>C#</label><br>
+    <input type="checkbox" /> <label>PHP</label>
+    <br><br>
+    <input type="radio" name="cinsiyet" id="cinsiyet"><label>Erkek</label><br>
+    <input type="radio" name="cinsiyet" id="cinsiyet"><label>Kadın</label><br>
+    <input type="radio" name="cinsiyet" id="cinsiyet"><label>Diğer</label><br>
+    <br><br>
+    <select name="" id="">
+        <option value="01">Adana</option>
+        <option value="06">Ankara</option>
+        <option value="34">İstanbul</option>
+        <option value="55">Samsun</option>
+        <option value="61">Trabzon</option>                
+    </select>
+    <br><br>
+    <button type="submit" onclick="kaydet()">Kaydet</button>
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Muhammet</td>
+                <td>HOCA</td>
+                <td>0 555 999 8877</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Canan</td>
+                <td>TAŞ</td>
+                <td>0 999 888 7744</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+<script>
+    let sayi = 5;
+    let sayi2 = 10;
+    let toplam = sayi + sayi2;
+    console.log('iki sayının toplamı...: ', toplam);
+
+    function kaydet(){
+        alert("Kayıt işlemi başarılı");
+    }
+
+</script>
+</body>
+
+</html>
